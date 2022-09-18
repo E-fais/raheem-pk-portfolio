@@ -21,8 +21,8 @@ body,html{
     --clr-accent:#16e0bd;
     --fs-h1:3rem;
     --fs-h2:2.650rem;
-    --fs-h3:2.30rem;
-    --fs-body:1rem;
+    --fs-h3:2.50rem;
+    --fs-body:1.5rem;
     --bs:0.25em 0.25em 0.75em rgba(0,0,0,0.25),
     0.125em 0.125em 0.25em rgba(0,0,0,0.15)
 }
@@ -44,7 +44,7 @@ strong{
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition:200ms ease-in-out;
-    margin-bottom: 0.4em;
+    margin-bottom: 2.4rem;
     border-radius: 10px;
 }
 .btn:hover{
@@ -178,7 +178,8 @@ h3{
 }
 h1{font-size: var(--fs-h1);}
 h2{font-size: var(--fs-h2);}
-h3{font-size: var(--fs-h3);}
+/* h3{font-size: var(--fs-h3);} */
+
 section{
     padding: 5em 2em;
 }
@@ -250,24 +251,22 @@ margin-bottom: 1em;
 .my-publications{
     background-color: var(--clr-dark);
     background-image: 
-    url('https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb');
+    url('https://www.nhm.ac.uk/content/dam/nhmwww/discover/benthic-diversity/Benthic-diversity-full-width.jpg.thumb.1160.1160.jpg');
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
     padding-top: 1em;
 }
+
 .section__title-my-publications{
     color: var(--clr-light);
     position: relative;
    
 }
-@media(max-width:600px){
-    h3{
-        font-size: 0.5em;
-    }
+
     
-}
+
 .section__title-my-publications::after{
     content: '';
     display: block;
@@ -282,10 +281,13 @@ margin-bottom: 1em;
 .publications{
 margin-bottom: 4em;
 }
-.publication{
-    max-width: 500px;
-    margin: 0 auto;
+@media(min-width:600px){
+    .publication{
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
+
 .publication::after{
     content: '';
     width: 20em;
@@ -298,7 +300,6 @@ margin-bottom: 4em;
 .publication h3,a{
     color:var(--clr-accent);
     font-weight: var(--fw-reg);
-    font-size: var(--fs-h3);
     text-decoration: none;
 }
 .section__subtitle-publication{
@@ -316,6 +317,19 @@ margin-bottom: 4em;
         margin-right: auto;
         margin-left:auto;
         max-width: 1000px;
+    }
+   
+}
+@media(max-width:600px){
+    .publication{
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    .publication p{
+        text-align:left;
+    }
+    .publication h3{
+    margin-left: 5px;
     }
 }
 .section__title-about{
@@ -370,10 +384,8 @@ margin-bottom: 4em;
 @media(max-width:600px){
     .footer-link{
 font-size:0.7em;
-
-
     }
-})
+}
 .footer a{
     color:inherit;
     text-decoration:none;
@@ -404,7 +416,7 @@ opacity:0.7
 .section-experience{
     margin: 0 auto;
     padding-top: 1em;
-    background-image: url(/Assets//images/background.jpg);
+    background-image: url('https://d2evkimvhatqav.cloudfront.net/images/_1200x630_crop_center-center_82_none/slide_microscope_72636176.jpg?v=1650460361,0.411,0.645');
     background-size: cover;
     background-blend-mode:multiply;
     color: var(--clr-light);
@@ -423,11 +435,11 @@ opacity:0.7
 @media(max-width:600px){
     .section-experience {
         text-align: left;
-        padding:2px;
+        padding:1em;
     
     }
     .experience_subtitle{
-        font-size: 0.2em;
+        font-size: 1.15em;
     }
     .section__title-experience{
         text-align: center;
@@ -442,10 +454,13 @@ opacity:0.7
 .experience_subtitle{
     color: var(--clr-accent);
     font-weight: 500;
-    font-size:var(--fs-h3);
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-bold;
+    
 }
 .experience-item{
     margin: 2em;
+}
+.experience-item p{
+    font-size: 2rem;
 }
 
