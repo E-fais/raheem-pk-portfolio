@@ -331,6 +331,9 @@ margin-bottom: 4em;
     .publication h3{
     margin-left: 5px;
     }
+.publication::after{
+Width:100%
+}
 }
 .section__title-about{
     margin-bottom: 0.3em;
